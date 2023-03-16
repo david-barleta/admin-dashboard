@@ -1,0 +1,63 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+#search {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column: 1 / span 2;
+}
+
+#user-info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#greeting {
+  display: grid;
+  grid-column: 1 / span 2;
+}
+
+#project-tools {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+nav {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  grid-template-rows: auto 1fr;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+main {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#projects-section {
+  display: grid;
+  grid-row: 1 / -1;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#announcements-section {
+  display: grid;
+}
+
+#trending-section {
+  display: grid;
+  grid-column: 2;
+}
