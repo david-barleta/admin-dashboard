@@ -5,6 +5,7 @@ body {
 }
 
 header {
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2fr;
@@ -32,6 +33,7 @@ header {
 }
 
 nav {
+  background-color: #1992d4;
   display: grid;
   grid-column: 1;
   grid-row: 1 / span 2;
@@ -40,7 +42,30 @@ nav {
   padding-top: 15px;
 }
 
+#navigation-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 5px;
+}
+
+#navigation-header img {
+  max-width: 36px; 
+  max-height: auto;
+}
+
+nav .navigation-link {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+}
+
+.navigation-link img {
+  max-width: 28px;
+  max-height: auto;
+}
+
 main {
+  background-color: #e2e8f0;
   display: grid;
   grid-column: 2;
   grid-template-columns: 2fr 1fr;
