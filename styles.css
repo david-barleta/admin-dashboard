@@ -86,3 +86,9 @@ main {
   display: grid;
   grid-column: 2;
 }
+
+.trending-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+}
