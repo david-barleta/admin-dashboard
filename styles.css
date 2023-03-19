@@ -11,6 +11,11 @@ header {
   grid-template-rows: 1fr 2fr;
 }
 
+header img {
+  max-width: 28px;
+  max-height: auto;
+}
+
 #search {
   display: grid;
   grid-template-columns: auto auto;
