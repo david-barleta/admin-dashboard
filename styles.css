@@ -9,32 +9,79 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2fr;
+  padding-top: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  z-index: 0;
 }
 
 header img {
-  max-width: 28px;
+  max-width: 24px;
   max-height: auto;
 }
 
 #search {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
   grid-column: 1 / span 2;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+#search-bar {
+  border-radius: 25px;
+  border: none;
+  background-color: #e2e8f0;
+  padding-left: 10px;
+}
+
+#search-bar:focus {
+  outline: none;
 }
 
 #user-info {
   display: grid;
   grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 #greeting {
   display: grid;
-  grid-column: 1 / span 2;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: start;
+  gap: 18px;
+  padding-left: 30px;
+}
+
+#greeting > div > :nth-child(2) {
+  font-size: 1.40rem;
 }
 
 #project-tools {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-column: span 2;
+  grid-template-columns: repeat(3, 96px);
+  align-items: center;
+  justify-content: end;
+  gap: 22px;
+  padding-right: 84px;
+}
+
+#project-tools button {
+  border-radius: 25px;
+  border: none;
+  background-color: #1992d4;
+  color: white;
+  padding: 6px;
+}
+
+#project-tools button:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -44,7 +91,7 @@ nav {
   grid-row: 1 / span 2;
   grid-template-rows: auto 1fr;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 #navigation-header {
@@ -55,7 +102,6 @@ nav {
 
 #navigation-header img {
   max-width: 36px; 
-  max-height: auto;
 }
 
 nav .navigation-link {
@@ -66,7 +112,10 @@ nav .navigation-link {
 
 .navigation-link img {
   max-width: 28px;
-  max-height: auto;
+}
+
+.navigation-link img:hover {
+  cursor: pointer;
 }
 
 main {
@@ -95,5 +144,4 @@ main {
 .trending-item {
   display: grid;
   grid-template-columns: auto 1fr;
-  /* grid-template-rows: 1fr 1fr; */
 }
