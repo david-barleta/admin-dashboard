@@ -93,8 +93,12 @@ nav {
   grid-column: 1;
   grid-row: 1 / span 2;
   grid-template-rows: auto 1fr;
-  padding-left: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
+  color: white;
+  font-weight: bold;
+  row-gap: 36px;
 }
 
 #navigation-header {
@@ -107,17 +111,30 @@ nav {
   max-width: 36px; 
 }
 
-nav .navigation-link {
+#navigation-links {
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 36px;
+}
+
+#navigation-links div {
+  display: grid;
+  row-gap: 14px;
+}
+
+.navigation-link {
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 10px;
+  column-gap: 14px;
+  padding-left: 8px;
+  align-items: center;
 }
 
 .navigation-link img {
-  max-width: 28px;
+  max-width: 20px;
 }
 
-.navigation-link img:hover {
+.navigation-link img:hover, .navigation-link div:hover {
   cursor: pointer;
 }
 
