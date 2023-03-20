@@ -18,8 +18,12 @@ header {
 }
 
 header img {
-  max-width: 24px;
+  max-width: 20px;
   max-height: auto;
+}
+
+header img:hover {
+  cursor: pointer;
 }
 
 #search {
@@ -50,10 +54,12 @@ header img {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  font-weight: bold;
 }
 
 #greeting {
   display: grid;
+  grid-column: span 2;
   grid-template-columns: auto auto;
   align-items: center;
   justify-content: start;
@@ -62,17 +68,18 @@ header img {
 }
 
 #greeting > div > :nth-child(2) {
-  font-size: 1.40rem;
+  font-size: 1.30rem;
+  font-weight: bold;
 }
 
 #project-tools {
   display: grid;
-  grid-column: span 2;
+  grid-column: span 1;
   grid-template-columns: repeat(3, 96px);
   align-items: center;
   justify-content: end;
   gap: 22px;
-  padding-right: 84px;
+  padding-right: 48px;
 }
 
 #project-tools button {
@@ -80,7 +87,9 @@ header img {
   border: none;
   background-color: #1992d4;
   color: white;
-  padding: 6px;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 0.90rem;
 }
 
 #project-tools button:hover {
