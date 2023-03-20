@@ -151,14 +151,15 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding-top: 24px;
-  padding-left: 24px;
+  padding: 24px;
+  gap: 24px;
 }
 
 #projects-section {
   display: grid;
   grid-row: span 2;
   grid-auto-rows: min-content;
+  row-gap: 12px;
 }
 
 #projects-section > div:nth-child(1) {
@@ -170,7 +171,6 @@ main {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 28px;
-  padding-top: 12px;
 }
 
 .project-card {
@@ -189,7 +189,7 @@ main {
 .project-preview {
   display: grid;
   grid-template-rows: auto minmax(120px, 1fr) auto;
-  padding: 32px;
+  padding: 28px;
 }
 
 .project-title {
@@ -210,4 +210,45 @@ main {
 
 .project-options img {
   max-width: 24px;
+}
+
+.project-options img:hover {
+  cursor: pointer;
+}
+
+#announcements-section {
+  display: grid;
+  grid-auto-rows: min-content min-content;
+  row-gap: 12px;
+}
+
+#announcements-section > div:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#announcements {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.20);
+  display: grid;
+  grid-auto-rows: min-content;
+  padding: 28px;
+  gap: 18px;
+}
+
+.announcement-title {
+  font-weight: bold;
+  font-size: 0.90rem;
+}
+
+.announcement p {
+  font-size: .80rem;
+  color: #636363;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #afabab;
 }
