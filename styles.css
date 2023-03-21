@@ -176,18 +176,9 @@ main {
 
 .project-card {
   background-color: white;
-  border-radius: 15px;
+  border-left: 10px solid #f0b429;
+  border-radius: 10px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.20);
-}
-
-.left-border {
-  background-color: #f0b429;
-  width: 28px;
-  height: auto;
-  position: absolute;
-}
-
-.project-preview {
   display: grid;
   grid-template-rows: auto minmax(150px, auto) auto;
   padding: 28px;
@@ -231,7 +222,7 @@ main {
 
 #announcements {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.20);
   display: grid;
   grid-auto-rows: min-content;
@@ -269,7 +260,7 @@ main {
 
 #trending-topics {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.20);
   display: grid;
   grid-auto-rows: min-content;
