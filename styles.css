@@ -170,7 +170,7 @@ main {
 #projects {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
-  grid-auto-rows: min-content;
+  grid-auto-rows: auto;
   gap: 28px;
 }
 
